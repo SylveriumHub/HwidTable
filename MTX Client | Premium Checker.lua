@@ -88,10 +88,7 @@ CheckHwid.TextSize = 14.000
 CheckHwid.MouseButton1Click:Connect(function()
 setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
 local clientId = game:GetService("RbxAnalyticsService"):GetClientId()
-local HWIDTable = {
-  "5c4e6981-c29f-48be-8f50-d984352ba370",
-  
-}
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/SylveriumHub/HwidTable/main/Allowed%20Ppl%20to%20Premium.lua"))()
   
   if clientId == HWIDTable then
     ScreenGui:Destroy()
