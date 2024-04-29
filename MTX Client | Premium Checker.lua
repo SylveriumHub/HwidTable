@@ -86,7 +86,6 @@ CheckHwid.Text = "Check HWID"
 CheckHwid.TextColor3 = Color3.fromRGB(227, 227, 227)
 CheckHwid.TextSize = 14.000
 CheckHwid.MouseButton1Click:Connect(function()
-setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
 local clientId = game:GetService("RbxAnalyticsService"):GetClientId()
 local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/SylveriumHub/HwidTable/main/Allowed%20Ppl%20to%20Premium.lua"))()
   
@@ -95,7 +94,7 @@ local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/Syl
       else
     print("You don't have Premium Access, buy it at MTX Store")
     print("We have copied MTX Store Discord server link into your clipboard")
-    print("https://discord.com/invite/8gFQga3kHc")
+    print(" ")
     setclipboard("https://discord.com/invite/8gFQga3kHc")
   end
 end)
@@ -259,17 +258,15 @@ coroutine.wrap(QVOSXZ_fake_script)()
 
 local function QVOSXS_fake_script() -- PlayerHWID.LocalScript 
 	local script = Instance.new('LocalScript', PlayerHWID)
-	local ClientId = game:GetService("RbxAnalyticsService"):GetClientId()
     wait(.1)
-      script.Parent.Text = "Your hwid is:", ClientId
+      script.Parent.Text = "Your hwid is:" .. game:GetService("RbxAnalyticsService"):GetClientId(),
 end
 coroutine.wrap(QVOSXS_fake_script)()
 
 local function QVOSXD_fake_script() -- ActualExecutor.LocalScript 
 	local script = Instance.new('LocalScript', ActualExecutor)
-	local ActExecutor = identifyexecutor()
     wait(.1)
-	    script.Parent.Text = "Your Executor is:", ActExecutor
+	    script.Parent.Text = "Your Executor is:" .. identifyexecutor(),
 end
 coroutine.wrap(QVOSXD_fake_script)()
 
@@ -277,7 +274,7 @@ coroutine.wrap(QVOSXD_fake_script)()
 
 local function MVMBOL_fake_script()
 	local script = Instance.new('LocalScript', Frame)
-  	script.Parent.Active = true
-    script.Parent.Draggable = true
+  	    script.Parent.Active = true
+            script.Parent.Draggable = true
 	end
 coroutine.wrap(MVMBOL_fake_script)()
