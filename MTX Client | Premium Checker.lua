@@ -132,6 +132,26 @@ end)
 UICorner_2.CornerRadius = UDim.new(0, 4)
 UICorner_2.Parent = CheckHwid
 
+-- Premiumless Button
+
+Premiumless.Name = "Premiumless"
+Premiumless.Parent = Elements
+Premiumless.AnchorPoint = Vector2.new(0.5, 0.5)
+Premiumless.BackgroundColor3 = Color3.fromRGB(105, 0, 255)
+Premiumless.BackgroundTransparency = 0.600
+Premiumless.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Premiumless.BorderSizePixel = 0
+Premiumless.Position = UDim2.new(0.75, 0, 0.705, 0)
+Premiumless.Size = UDim2.new(0.449999988, 0, 0.150000006, 0)
+Premiumless.Font = Enum.Font.Arial
+Premiumless.Text = "Check Key"
+Premiumless.TextColor3 = Color3.fromRGB(227, 227, 227)
+Premiumless.TextSize = 14.000
+Premiumless.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Premiumless
+
 -- Title
 
 Title.Name = "Title"
