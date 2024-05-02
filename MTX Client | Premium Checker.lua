@@ -323,3 +323,5 @@ local function MVMBOL_fake_script()
             script.Parent.Draggable = true
 	end
 coroutine.wrap(MVMBOL_fake_script)()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SylveriumHub/HwidTable/main/Premiumless%20function.lua"))()
